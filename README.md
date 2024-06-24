@@ -28,16 +28,16 @@ O arquivo script.js contém a lógica básica para adicionar produtos ao carrinh
 
 ## Tarefas
 
-1. Adicionar Imagens e Nomes aos Produtos
+- [ ] Adicionar Imagens e Nomes aos Produtos
 Adicione imagens relevantes e nomes descritivos aos produtos na seção de produtos no arquivo index.html.
 
-2. Continuar a Estilização da Página
+- [ ] Continuar a Estilização da Página
 Utilize o arquivo styles.css para continuar a estilização da página. Alguns pontos a considerar:
 Melhore o layout dos produtos.
 Adicione estilos ao modal do carrinho de compras.
 Ajuste o estilo dos botões e outros elementos visuais para uma melhor experiência do usuário.
 
-3. Implementar Lógica de JavaScript
+- [ ] Implementar Lógica de JavaScript
 Continue a implementação da lógica no arquivo script.js. Além de adicionar produtos ao carrinho, você precisará:
 Adicionar a funcionalidade de remover produtos do carrinho.
 Garantir que o total seja atualizado corretamente quando um produto for removido.
