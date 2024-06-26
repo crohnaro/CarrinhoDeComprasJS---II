@@ -1,52 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrinho de Compras</title>
+    <title>Supermercado CHATGPT</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Carrinho de Compras</h1>
-    <div class="products">
-        <div class="product">
-            <img src="https://via.placeholder.com/150" alt="Produto 1">
-            <h2>Produto 1</h2>
-            <p>Descrição do Produto 1</p>
-            <p>Preço: R$ 10,00</p>
-            <button onclick="addToCart('Produto 1', 10)">Adicionar ao Carrinho</button>
-        </div>
-        <div class="product">
-            <img src="https://via.placeholder.com/150" alt="Produto 2">
-            <h2>Produto 2</h2>
-            <p>Descrição do Produto 2</p>
-            <p>Preço: R$ 20,00</p>
-            <button onclick="addToCart('Produto 2', 20)">Adicionar ao Carrinho</button>
-        </div>
-        <div class="product">
-            <img src="https://via.placeholder.com/150" alt="Produto 3">
-            <h2>Produto 3</h2>
-            <p>Descrição do Produto 3</p>
-            <p>Preço: R$ 30,00</p>
-            <button onclick="addToCart('Produto 3', 30)">Adicionar ao Carrinho</button>
-        </div>
-        <div class="product">
-            <img src="https://via.placeholder.com/150" alt="Produto 4">
-            <h2>Produto 4</h2>
-            <p>Descrição do Produto 4</p>
-            <p>Preço: R$ 40,00</p>
-            <button onclick="addToCart('Produto 4', 40)">Adicionar ao Carrinho</button>
-        </div>
-        <div class="product">
-            <img src="https://via.placeholder.com/150" alt="Produto 5">
-            <h2>Produto 5</h2>
-            <p>Descrição do Produto 5</p>
-            <p>Preço: R$ 50,00</p>
-            <button onclick="addToCart('Produto 5', 50)">Adicionar ao Carrinho</button>
-        </div>
-    </div>
+    <header>
+        <h1>Supermercado CHATGPT</h1>
+    </header>
 
-    <button class="cart-button" onclick="toggleCart()">🛒 Ver Carrinho</button>
+    <div class="container">
+        <section class="products">
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSvKUN_uwonGE7aaNFBfCUZdDqj43oazmjxT8cONfRRPTFGf3Q00WGzk6W3JH_RcxP-ozZ4ENuAQByDaajjuovMOqcSU4k58IsalTvITMQ5J6zvRn0GXplz-Q&usqp=CAE" alt="Produto 1">
+                <h2>Macarrão Barilla 500g</h2>
+                <p>Para o almoço de domingo, não tem nada melhor que reunir a família para saborear aquela bela macarronada bem preparada e com o tempero especial de cada família.</p>
+                <p>Preço: R$ 15,40</p>
+                <button onclick="addToCart('Macarrão Barilla 500g', 15.40)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQgB2EAM4Gj2BxQJItPbrPcvuqsvewzk21vOdcTd3Mgk1v6ANyt0lGRjgVaSz19JhI1ZhnyIiuYngzrYeD2vJ7kTnBtvB-doZzx2VkVVzHzwsjgXcPSWJWx&usqp=CAE" alt="Produto 2">
+                <h2>Feijão Manteiguinha de Santarém 500g</h2>
+                <p>O Feijão Manteiguinha é da categoria Caupi. Suave, bem pequeno, com a textura amanteigada e levemente adocicado, não poderia ter outro nome!</p>
+                <p>Preço: R$ 27,00</p>
+                <button onclick="addToCart('Feijão Manteiguinha 500g', 27.00)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSB4vh020FakpbdA7VFZifzRQRm8UePlkGdAoTxoIG-jVOujFYk2hLg2zM_3iwCNz9YIFh-kIfQ3FEbBGrOvjKrMD9MQbuFd8F9tHLiBle8&usqp=CAE" alt="Produto 3">
+                <h2>Empadão de Frango</h2>
+                <p>Empadão Cardin, transforma o almoço da família em um momento inesquecível. Enfim chegou o momento tão aguardado por todos, a chegada do Empadão Cardin à sua mesa</p>
+                <p>Preço: R$ 60,00</p>
+                <button onclick="addToCart('Empadão de Frango', 60.00)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcT6PhlAFl6oaNAE0JJM1wVtFByq6xeFefh9JXxgVsIN3sfyq35ErOf2EdVTJtepuFpXk2kjxG8VSWwIV0jNf9tC-UKyqZyvLMa2_w0zJUvV4tDh_MUQ02nlcg&usqp=CAE" alt="Produto 4">
+                <h2>Farinha de Trigo Dona Benta Tradicional 1kg</h2>
+                <p>Farinha De Trigo Dona Benta Tradicional 1Kg A marca Dona Benta é uma das favoritas do consumidor brasileiro por sua altíssima qualidade e inovação em seus produtos.</p>
+                <p>Preço: R$ 5,00</p>
+                <button onclick="addToCart('Farinha de Trigo Dona Benta 1kg', 5.00)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcR9CnSGUTdaupqk7uDSfPulNsB0kYN-BTFMeQT_esBbXABynGSJXnDYLA4hmf5B8A__D_kZ1kbTTRR0QChQNuo5Ba8140EQkfWM0CdyrnafMDmLlCR8KmNyOGI&usqp=CAE" alt="Produto 5">
+                <h2>Aveia Quaker 450g em flocos</h2>
+                <p>A Quaker acredita que pequenas mudanças de hábitos podem fazer grande diferença na sua saúde.</p>
+                <p>Preço: R$ 5,50</p>
+                <button onclick="addToCart('Aveia Quaker 450g', 5.50)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQPX8tt7JNvpn_WBS3-PuvlLO7gL6Gh8EdlmGB7Gl0T0r2X-I8fUCivlUmttBUm8IGmcovL6Oc_PhHQIopvFmyo2_dSEsutq1tjYy5aZFwcI3fN1gnwfvEP&usqp=CAE" alt="Produto 5">
+                <h2>Bacon Manta Sadia Peça</h2>
+                <p>O bacon Sadia é feito com defumação natural e ideal para descomplicar suas receitas.</p>
+                <p>Preço: R$ 60,50</p>
+                <button onclick="addToCart('Aveia Quaker 450g', 5.50)">Adicionar ao Carrinho</button>
+            </div>
+        </section>
+
+        <aside class="sidebar">
+            <button class="cart-button" onclick="toggleCart()">🛒 Ver Carrinho</button>
+        </aside>
+    </div>
 
     <div id="cart-modal" class="modal">
         <div class="modal-content">
