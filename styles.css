@@ -1,13 +1,14 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
-    background-color: #f8f9fa;
+    background-color: #000000;
 }
 
 h1 {
-    color: #333;
+    color: #ffffff;
     text-align: center;
     margin-bottom: 40px;
+
 }
 
 .products {
@@ -18,8 +19,8 @@ h1 {
 }
 
 .product {
-    background: white;
-    border: 1px solid #ddd;
+    background: rgb(37, 37, 37);
+    border: 1px solid #3d3d3d;
     border-radius: 5px;
     padding: 10px;
     width: 200px;
@@ -29,40 +30,44 @@ h1 {
 
 .product img {
     max-width: 100%;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #1f1e1e;
     margin-bottom: 10px;
 }
 
 .product h2 {
     font-size: 18px;
     margin: 10px 0;
+    color: white;
 }
 
 .product p {
     font-size: 14px;
-    color: #555;
+    color: #ffffff;
     margin: 5px 0;
 }
 
 button {
-    background-color: #28a745;
+    background-color: #474d48;
     color: white;
     border: none;
     padding: 10px;
     cursor: pointer;
     border-radius: 5px;
     font-size: 14px;
+    transition: 0.5s;
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #2b6137;
+    font-size: 16px;
+    transition: 0.5s;
 }
 
 .cart-button {
     position: fixed;
     top: 20px;
     right: 20px;
-    background-color: #007bff;
+    background-color: #545b63;
     padding: 15px;
     color: white;
     border: none;
@@ -74,6 +79,7 @@ button:hover {
 
 .cart-button:hover {
     background-color: #0056b3;
+    font-size: 22px;
 }
 
 .modal {
