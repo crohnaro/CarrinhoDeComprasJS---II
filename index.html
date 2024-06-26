@@ -1,52 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrinho de Compras</title>
+    <title>Supermercado CHATGPT</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Carrinho de Compras</h1>
-    <div class="products">
-        <div class="product">
-            <img src="https://via.placeholder.com/150" alt="Produto 1">
-            <h2>Produto 1</h2>
-            <p>Descrição do Produto 1</p>
-            <p>Preço: R$ 10,00</p>
-            <button onclick="addToCart('Produto 1', 10)">Adicionar ao Carrinho</button>
-        </div>
-        <div class="product">
-            <img src="https://via.placeholder.com/150" alt="Produto 2">
-            <h2>Produto 2</h2>
-            <p>Descrição do Produto 2</p>
-            <p>Preço: R$ 20,00</p>
-            <button onclick="addToCart('Produto 2', 20)">Adicionar ao Carrinho</button>
-        </div>
-        <div class="product">
-            <img src="https://via.placeholder.com/150" alt="Produto 3">
-            <h2>Produto 3</h2>
-            <p>Descrição do Produto 3</p>
-            <p>Preço: R$ 30,00</p>
-            <button onclick="addToCart('Produto 3', 30)">Adicionar ao Carrinho</button>
-        </div>
-        <div class="product">
-            <img src="https://via.placeholder.com/150" alt="Produto 4">
-            <h2>Produto 4</h2>
-            <p>Descrição do Produto 4</p>
-            <p>Preço: R$ 40,00</p>
-            <button onclick="addToCart('Produto 4', 40)">Adicionar ao Carrinho</button>
-        </div>
-        <div class="product">
-            <img src="https://via.placeholder.com/150" alt="Produto 5">
-            <h2>Produto 5</h2>
-            <p>Descrição do Produto 5</p>
-            <p>Preço: R$ 50,00</p>
-            <button onclick="addToCart('Produto 5', 50)">Adicionar ao Carrinho</button>
-        </div>
-    </div>
+    <header>
+        <h1>Dino de Mullet Store</h1>
+    </header>
 
-    <button class="cart-button" onclick="toggleCart()">🛒 Ver Carrinho</button>
+    <div class="container">
+        <section class="products">
+            <div class="product">
+                <img src="https://i.pinimg.com/736x/c1/34/cf/c134cf0dd4133d862f17c8807e2684d9.jpg" alt="Produto 1">
+                <h2>Poster Crocodile</h2>
+                <p>Poster Do Personagem Crocodile do mangá/anime One Piece, pelo Mangaká Japônes Eiichiro Oda e feito pelo artista digital Brasileiro Davi Sobrinho, 50cmx90cm</p>
+                <p>Preço: R$ 60,00</p>
+                <button onclick="addToCart('Crocodile', 60.00)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/564x/1f/7f/09/1f7f09d8f24228364b60366bfec4e2cb.jpg" alt="Produto 2">
+                <h2>Poster Josuke Higashikata</h2>
+                <p>Poster Do Personagem Josuke Higashikata do mangá/anime Jojo's Bizarre Adventures: Diamond is Unbreakeble, pelo Mangaká Japônes Hirohiko Araki e feito pelo artista digital Brasileiro Davi Sobrinho, 50cmx70cm</p>
+                <p>Preço: R$ 40,00</p>
+                <button onclick="addToCart('Josuke', 40.00)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/564x/9e/54/cc/9e54cc4d4bd32cd0957b14aae86491aa.jpg" alt="Produto 3">
+                <h2>Poster Silk</h2>
+                <p>Poster Da Personagem Silk da franquia Marvel Comics, feito pelo artista digital Brasileiro Davi Sobrinho, 50cmx90cm</p>
+                <p>Preço: R$ 45,50</p>
+                <button onclick="addToCart('Silk', 45.50)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/736x/58/bb/5b/58bb5bf18ad62b7419e1a5cf53003c6d.jpg" alt="Produto 4">
+                <h2>Poster Diego Brando Vs; Funny Valentinne</h2>
+                <p>Poster baseado num painel do mangá/anime Jojo's Bizarre Adventures: Steel Ball Run, pelo Mangaká Japônes Hirohiko Araki, e reimaginado pelo artista digital Brasileiro Davi Sobrinho, 60cmx100cm</p>
+                <p>Preço: R$ 100,00</p>
+                <button onclick="addToCart('Diego vs Valentinne', 100.00)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/736x/2c/74/17/2c7417f0ef1f80539248528de6e2d6af.jpg" alt="Produto 5">
+                <h2>Poster Ben 10</h2>
+                <p>Poster Do desenho animado Ben 10, da Cartoon Network e Man of Action, feito pelo artista digital Brasileiro Davi Sobrinho, 50cmx90cm</p>
+                <p>Preço: R$ 110,50</p>
+                <button onclick="addToCart('Ben 10',.50)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/564x/5e/d7/10/5ed710ca9ec66f65b44cab1d4cc868f1.jpg" alt="Produto 5">
+                <h2>Poster Itachi Uchiha</h2>
+                <p>Poster Do Personagem Itachi Uchiha do mangá/anime Naruto, pelo Mangaká Japônes Masashi Kishimoto e feito pelo artista digital Brasileiro Davi Sobrinho, 50cmx90cm</p>
+                <p>Preço: R$ 70,50</p>
+                <button onclick="addToCart('Itachi', 70.50)">Adicionar ao Carrinho</button>
+            </div>
+        </section>
+
+        <aside class="sidebar">
+            <button class="cart-button" onclick="toggleCart()">🛒 Ver Carrinho</button>
+        </aside>
+    </div>
 
     <div id="cart-modal" class="modal">
         <div class="modal-content">
