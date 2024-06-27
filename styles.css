@@ -45,7 +45,7 @@ h1 {
 }
 
 button {
-    background-color: #28a745;
+    background-color: #001bb3;
     color: white;
     border: none;
     padding: 10px;
@@ -55,7 +55,7 @@ button {
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #001bb3;
 }
 
 .cart-button {
@@ -73,7 +73,7 @@ button:hover {
 }
 
 .cart-button:hover {
-    background-color: #0056b3;
+    background-color: #001bb3;
 }
 
 .modal {
