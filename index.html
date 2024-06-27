@@ -1,52 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrinho de Compras</title>
+    <title>Supermercado CHATGPT</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Carrinho de Compras</h1>
-    <div class="products">
-        <div class="product">
-            <img src="https://via.placeholder.com/150" alt="Produto 1">
-            <h2>Produto 1</h2>
-            <p>Descrição do Produto 1</p>
-            <p>Preço: R$ 10,00</p>
-            <button onclick="addToCart('Produto 1', 10)">Adicionar ao Carrinho</button>
-        </div>
-        <div class="product">
-            <img src="https://via.placeholder.com/150" alt="Produto 2">
-            <h2>Produto 2</h2>
-            <p>Descrição do Produto 2</p>
-            <p>Preço: R$ 20,00</p>
-            <button onclick="addToCart('Produto 2', 20)">Adicionar ao Carrinho</button>
-        </div>
-        <div class="product">
-            <img src="https://via.placeholder.com/150" alt="Produto 3">
-            <h2>Produto 3</h2>
-            <p>Descrição do Produto 3</p>
-            <p>Preço: R$ 30,00</p>
-            <button onclick="addToCart('Produto 3', 30)">Adicionar ao Carrinho</button>
-        </div>
-        <div class="product">
-            <img src="https://via.placeholder.com/150" alt="Produto 4">
-            <h2>Produto 4</h2>
-            <p>Descrição do Produto 4</p>
-            <p>Preço: R$ 40,00</p>
-            <button onclick="addToCart('Produto 4', 40)">Adicionar ao Carrinho</button>
-        </div>
-        <div class="product">
-            <img src="https://via.placeholder.com/150" alt="Produto 5">
-            <h2>Produto 5</h2>
-            <p>Descrição do Produto 5</p>
-            <p>Preço: R$ 50,00</p>
-            <button onclick="addToCart('Produto 5', 50)">Adicionar ao Carrinho</button>
-        </div>
-    </div>
+    <header>
+        <h1>Calçados BY</h1>
+    </header>
 
-    <button class="cart-button" onclick="toggleCart()">🛒 Ver Carrinho</button>
+    <div class="container">
+        <section class="products">
+            <div class="product">
+                <img src="https://secure-static.vans.com.br/medias/sys_master/vans/vans/h46/h63/h00/h00/11435689967646/1004300310006U-01-BASEIMAGE-Hires.jpg" alt="Produto 1">
+                <h2>HOCKEY SKATEBOARDS</h2>
+                <p>Para as pessoas que curtem uma dose maior de adrenalina, este modelo irá acompanhar voçê com o desining único e radical.</p>
+                <p>Preço: R$ 399,90</p>
+                <button onclick="addToCart('HOCKEY SKATEBOARDS', 399.90)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <img src="https://secure-static.vans.com.br/medias/sys_master/vans/vans/h22/h56/h00/h00/11744403914782/1004300310013U-01-BASEIMAGE-Hires.jpg" alt="Produto 2">
+                <h2>Y2K HOT BLUE</h2>
+                <p>Está sentindo frio? Deixa que o modelo "Y2K HOT BLUE" dá conta do recado. Para você estar sempre colocando fogo nas pistas.</p>
+                <p>Preço: 299,00</p>
+                <button onclick="addToCart('Y2K HOT BLUE', 299.00)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <img src="https://secure-static.vans.com.br/medias/sys_master/vans/vans/hac/h22/h00/h00/11406051573790/1002000850159U-01-BASEIMAGE-Hires.jpg" alt="Produto 3">
+                <h2>LAVANDER BLACK</h2>
+                <p>Com estilo e delicadeza o modelo "Lavender" irá te deixar gracioso e cheio de estilo no rolé</p>
+                <p>Preço: R$ 249,90</p>
+                <button onclick="addToCart('LAVANDER BLACK', 249.90)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <img src="https://secure-static.vans.com.br/medias/sys_master/vans/vans/h7a/h87/h00/h00/10625853849630/1004400090001U-01-BASEIMAGE-Hires.jpg" alt="Produto 4">
+                <h2>GILBERT CROCKETT</h2>
+                <p>Para pessoas mais tranquilas em questão de cores, o modelo "GILBERT CROCKETT" está aqui para te salvar. Cores neutras para você chamar atenção apenas com suas tricks</p>
+                <p>Preço: R$ 335,50</p>
+                <button onclick="addToCart('GILBERT CROCKETT', 335.50)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <img src="https://secure-static.vans.com.br/medias/sys_master/vans/vans/h6f/h64/h00/h00/9866339123230/1002001070176U-01-BASEIMAGE-Hires.jpg" alt="Produto 5">
+                <h2>OLD SKOOL WHITE BLACK</h2>
+                <p>Para os antigos "OLD SKOOL WHITE BLACK", é o queridinho. Puro estilo, charme e o melhor de tudo, conforto. Melhor opção pra quem quer chegar style e chamar atenção</p>
+                <p>Preço: R$ 500,00</p>
+                <button onclick="addToCart('OLD SKOOL WHITE BLACK', 5.50)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <img src="https://secure-static.vans.com.br/medias/sys_master/vans/vans/h16/h82/h00/h00/11311172878366/1001200210001U-01-BASEIMAGE-Hires.jpg" alt="Produto 5">
+                <h2>PIQUITOS</h2>
+                <p>A mulecada não pode ficar de fora do role só pelo tênis. O modelo "PIQUITOS" serve exatamente para isso, deixa o role dos seus filhos muito incrivel e extremamente confortavel.</p>
+                <p>Preço: R$ 152,30</p>
+                <button onclick="addToCart('PIQUITOS', 152.30)">Adicionar ao Carrinho</button>
+            </div>
+        </section>
+
+        <aside class="sidebar">
+            <button class="cart-button" onclick="toggleCart()">🛒 Ver Carrinho</button>
+        </aside>
+    </div>
 
     <div id="cart-modal" class="modal">
         <div class="modal-content">
