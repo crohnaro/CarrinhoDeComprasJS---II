@@ -89,7 +89,7 @@ button:hover {
     position: fixed;
     top: 20px;
     right: 20px;
-    background-color: #007bff;
+    background-color: #222b34;
     padding: 15px;
     color: white;
     border: none;
@@ -101,7 +101,7 @@ button:hover {
 }
 
 .cart-button:hover {
-    background-color: #0056b3;
+    background-color: #3c5168;
 }
 
 .modal {
