@@ -2,22 +2,22 @@ body {
     font-family: Arial, sans-serif;
     margin: 20px;
     background-color: #f8f9fa;
-}
-
-h1 {
+    }
+    
+    h1 {
     color: #333;
     text-align: center;
     margin-bottom: 40px;
-}
-
-.products {
+    }
+    
+    .products {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 20px;
-}
-
-.product {
+    }
+    
+    .product {
     background: white;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -25,26 +25,26 @@ h1 {
     width: 200px;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.product img {
+    }
+    
+    .product img {
     max-width: 100%;
     border-bottom: 1px solid #ddd;
     margin-bottom: 10px;
-}
-
-.product h2 {
+    }
+    
+    .product h2 {
     font-size: 18px;
     margin: 10px 0;
-}
-
-.product p {
+    }
+    
+    .product p {
     font-size: 14px;
     color: #555;
     margin: 5px 0;
-}
-
-button {
+    }
+    
+    button {
     background-color: #28a745;
     color: white;
     border: none;
@@ -52,13 +52,13 @@ button {
     cursor: pointer;
     border-radius: 5px;
     font-size: 14px;
-}
-
-button:hover {
+    }
+    
+    button:hover {
     background-color: #218838;
-}
-
-.cart-button {
+    }
+    
+    .cart-button {
     position: fixed;
     top: 20px;
     right: 20px;
@@ -70,13 +70,13 @@ button:hover {
     font-size: 20px;
     cursor: pointer;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.cart-button:hover {
+    }
+    
+    .cart-button:hover {
     background-color: #0056b3;
-}
-
-.modal {
+    }
+    
+    .modal {
     display: none;
     position: fixed;
     top: 0;
@@ -87,34 +87,45 @@ button:hover {
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
     z-index: 1000;
     overflow-y: auto;
-}
-
-.modal-content {
+    }
+    
+    .modal-content {
     padding: 20px;
-}
-
-.close {
+    }
+    
+    .close {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
-}
-
-.close:hover,
-.close:focus {
+    }
+    
+    .close:hover,
+    .close:focus {
     color: black;
-}
-
-#cart {
+    }
+    
+    #cart {
     list-style-type: none;
     padding: 0;
-}
-
-#cart li {
+    }
+    
+    #cart li {
     background: #f8f9fa;
     margin-bottom: 10px;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
-}
+    }
+
+    .item {
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
+        margin-bottom: 10px; 
+    }
+    
+    .botaoremov {
+        margin-left: 10px; 
+    }
