@@ -1,48 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrinho de Compras</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <h1>Carrinho de Compras</h1>
     <div class="products">
         <div class="product">
-            <img src="https://via.placeholder.com/150" alt="Produto 1">
-            <h2>Produto 1</h2>
-            <p>Descrição do Produto 1</p>
+            <img src="img/oleo.jpg" alt="Produto 1">
+            <h2>Óleo de cozinha</h2>
+            <p>São gorduras de origem vegetal ou animal, conservadas geralmente em estado líquido </p>
             <p>Preço: R$ 10,00</p>
-            <button onclick="addToCart('Produto 1', 10)">Adicionar ao Carrinho</button>
+            <div class="button-container">
+                <button onclick="addToCart('Óleo de cozinha', 10.00)">Adicionar ao Carrinho</button>
+            </div>
         </div>
         <div class="product">
-            <img src="https://via.placeholder.com/150" alt="Produto 2">
-            <h2>Produto 2</h2>
-            <p>Descrição do Produto 2</p>
+            <img src="img/azeite.webp" alt="Produto 2">
+            <h2>Azeite</h2>
+            <p>Azeite é um óleo vegetal extraído da azeitona, o fruto da oliveira</p>
             <p>Preço: R$ 20,00</p>
-            <button onclick="addToCart('Produto 2', 20)">Adicionar ao Carrinho</button>
+            <div class="button-container">
+                <button onclick="addToCart('Azeite', 20.00)">Adicionar ao Carrinho</button>
+            </div>
         </div>
         <div class="product">
-            <img src="https://via.placeholder.com/150" alt="Produto 3">
-            <h2>Produto 3</h2>
-            <p>Descrição do Produto 3</p>
-            <p>Preço: R$ 30,00</p>
-            <button onclick="addToCart('Produto 3', 30)">Adicionar ao Carrinho</button>
+            <img src="img/SacoArroz.webp" alt="Produto 3">
+            <h2>Arroz 5kg</h2>
+            <p>Saco de arroz contendo 5 kg</p>
+            <p>Preço: R$ 26,90</p>
+            <div class="button-container">
+                <button onclick="addToCart('Arroz 5kg', 26.90)">Adicionar ao Carrinho</button>
+            </div>
         </div>
         <div class="product">
-            <img src="https://via.placeholder.com/150" alt="Produto 4">
-            <h2>Produto 4</h2>
-            <p>Descrição do Produto 4</p>
-            <p>Preço: R$ 40,00</p>
-            <button onclick="addToCart('Produto 4', 40)">Adicionar ao Carrinho</button>
+            <img src="img/file.jfif" alt="Produto 4">
+            <h2>Contra Filé 1kg</h2>
+            <p>O contra filé é o corte mais longo do boi, e contém uma espessa camada de gordura em sua parte externa
+            </p>
+            <p>Preço: R$ 60,00</p>
+            <div class="button-container">
+                <button onclick="addToCart('Contra Filé 1kg', 60.00)">Adicionar ao Carrinho</button>
+            </div>
         </div>
         <div class="product">
-            <img src="https://via.placeholder.com/150" alt="Produto 5">
-            <h2>Produto 5</h2>
-            <p>Descrição do Produto 5</p>
-            <p>Preço: R$ 50,00</p>
-            <button onclick="addToCart('Produto 5', 50)">Adicionar ao Carrinho</button>
+            <img src="img/cestaBasica.webp" alt="Produto 5">
+            <h2>Cesta Básica</h2>
+            <p>Quatro pacotes de arroz, feijão e macarrão e dois pacotes de açúcar e sal.</p>
+            <p>Preço: R$ 80,00</p>
+            <div class="button-container">
+                <button onclick="addToCart('Cesta Básica', 80.00)">Adicionar ao Carrinho</button>
+            </div>
         </div>
     </div>
 
@@ -61,4 +74,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
