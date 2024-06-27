@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de compras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div style="display: flex; margin-left: 780px; font-size: larger;">
+        <h1 style="color: rgb(255, 154, 3);margin-right: 5px;">Humild's</h1><h1 style="color: rgb(221, 25, 25);"> Burguer</h1>
+    </div>
+
+    <div class="products">
+
+        <div class="product">
+            <img src="img/coca deitada.jpg" style="height: 150px;">
+            <h2>Coca-Cola</h2>
+            <p>Coca lata 350ml</p>
+            <p>Preço: R$ 5,00</p>
+            <button onclick="addToCart('Coca-Cola', 5)">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="product">
+            <img src="img/burgui.avif" alt="Produto 2">
+            <h2>Hambúrguer</h2>
+            <p>Pão, carne, alface, tomate, cheddar </p>
+            <p>Preço: R$ 25,00</p>
+            <button onclick="addToCart('Hambúrguer', 25)">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="product">
+            <img src="img/batata.jpg" alt="Produto 3" style="height: 150px;">
+            <h2>Batata frita</h2>
+            <p>Pote de 200g </p>
+            <p>Preço: R$ 5,00</p>
+            <button onclick="addToCart('Batata frita', 5)">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="product">
+            <img src="img/milkshake.avif" alt="Produto 4" style="height: 150px; width: 250px;">
+            <h2>Milkshake</h2>
+            <p>500ml (morango, chocolate, caramelo etc.)</p>
+            <p>Preço: R$ 15,00</p>
+            <button onclick="addToCart('Milkshake', 15)">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="product">
+            <img src="img/açai.jpg" alt="Produto 5">
+            <h2>Açaí</h2>
+            <p>Pote 300g</p>
+            <p>Preço: R$ 18,00</p>
+            <button onclick="addToCart('Açaí', 18)">Adicionar ao Carrinho</button>
+        </div>
+
+    </div>
+
+    <button class="cart-button" onclick="toggleCart()">🛒 Ver Carrinho</button>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            
+            <span class="close" onclick="toggleCart()">&times;</span>
+            <h2>Carrinho de Compras</h2>
+            <ul id="cart">
+                <!-- Itens do carrinho serão adicionados aqui -->
+            </ul>
+            <p>Total: R$ <span id="total">0,00</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
