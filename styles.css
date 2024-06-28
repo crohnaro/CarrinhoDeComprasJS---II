@@ -45,7 +45,7 @@ h1 {
 }
 
 button {
-    background-color: #28a745;
+    background-color: red;
     color: white;
     border: none;
     padding: 10px;
@@ -55,14 +55,14 @@ button {
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: rgb(189, 4, 4);
 }
 
 .cart-button {
     position: fixed;
     top: 20px;
     right: 20px;
-    background-color: #007bff;
+    background-color: #ff0000;
     padding: 15px;
     color: white;
     border: none;
@@ -73,7 +73,7 @@ button:hover {
 }
 
 .cart-button:hover {
-    background-color: #0056b3;
+    background-color:rgb(189, 4, 4);
 }
 
 .modal {
@@ -118,3 +118,33 @@ button:hover {
     border: 1px solid #ddd;
     border-radius: 5px;
 }
+.item {
+    display: flex; /* Utiliza flexbox para alinhar itens */
+    justify-content: space-between; /* Alinha o texto e o botão nas extremidades */
+    align-items: center; /* Centraliza verticalmente os itens */
+    margin-bottom: 10px; /* Adiciona margem entre os itens */
+    }
+    
+    .remove-button {
+    margin-left: 10px; /* Ajusta a margem à esquerda do botão "Remover" */
+    background-color:red;
+    }
+
+    .nome {
+        display:flex;
+        width:200px;
+        height:200px;
+        text-align:top;
+    }
+
+    .product-image {
+        max-width: 100%;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 10px;
+        transition: transform 0.3s ease;
+    }
+    
+    .product-image:hover {
+        transform: scale(1.175); /* Aumenta o tamanho em 10% */
+    }
+
