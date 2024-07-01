@@ -1,16 +1,43 @@
 let cart = [];
 let total = 0;
  
-function addToCart(productName, productPrice) {
-    // Adiciona o produto ao carrinho
-    cart.push({ name: productName, price: productPrice });
- 
-    // Atualiza o total
-    total += productPrice;
- 
-    // Renderiza o carrinho
-    renderCart();
+function addToCart(productName, price) {
+    // Estrutura básica do item do carrinho
+    var item = {
+        name: productName,
+        price: price
+    };
+
+    // Recupera o carrinho do armazenamento local ou inicializa um novo array vazio
+    var cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    // Adiciona o novo item ao carrinho
+    cart.push(item);
+
+    // Armazena o carrinho de volta no armazenamento local
+    localStorage.setItem('cart', JSON.stringify(cart));
+
+    // Mostra mensagem de sucesso (opcional)
+    alert('Produto adicionado ao carrinho!');
+
+    // Você pode adicionar lógica adicional aqui, como atualizar a exibição do carrinho na página
 }
+
+// Função para redirecionar à página do carrinho
+document.querySelector('.cart-button').addEventListener('click', function() {
+    window.location.href = 'index.html'; // Redireciona para cart.html
+});
+
+// Função para exibir ou ocultar o modal do carrinho
+function toggleCart() {
+    var modal = document.getElementById('cart-modal');
+    modal.classList.toggle('show-modal');
+}
+
+// Redirecionar para a página de carrinho ao clicar no botão "Ver Carrinho"
+document.querySelector('.cart-button').addEventListener('click', function() {
+    window.location.href = 'index.html'; // Redireciona para cart.html
+});
  
 function renderCart() {
     let cartList = document.getElementById('cart');
